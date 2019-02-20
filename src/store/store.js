@@ -24,13 +24,17 @@ saleProducts: state =>{
 }
 },
 mutations:{
-    reducePrice: state =>{
-        state.products.forEach(product=>{
-            product.price -=1
-        })
+    reducePrice: (state, payload) =>{
+            state.products.forEach(product=>{
+                product.price -= payload
+            })
     }
 },
 actions:{
-
+reducePrice: (context,payload) =>{
+    setTimeout(function (){
+      context.commit('reducePrice',payload)  
+    },2000);
+}
 }
 })

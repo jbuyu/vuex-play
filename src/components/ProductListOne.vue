@@ -7,21 +7,27 @@
                <span class="price"> $ {{ product.price }}</span>
              </li> 
         </ul>
-        <button @click="reducePrice">Reduce Price</button>
+        <button @click="reducePrice(4)">Reduce Price</button>
     </div>
 </template>
 <script>
+import { mapActions } from 'vuex';
+import { mapGetters } from 'vuex';
+
 export default {
    name: "ProductListOne",
    computed:{
-       saleProducts(){
-           return this.$store.getters.saleProducts;
-       }
+       products(){
+           return this.$store.state.products;
+       },
+       ...mapGetters([
+           'saleProducts'
+       ])
    },
    methods:{
-    reducePrice : function (){
-        this.$store.commit ('reducePrice')
-    }
+    ...mapActions([
+        'reducePrice'
+    ])
    }
 }
 </script>
