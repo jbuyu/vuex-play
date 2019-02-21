@@ -9,21 +9,12 @@ yarn install
 ```
 yarn run serve
 ```
-
-### Compiles and minifies for production
+## Live Version
 ```
-yarn run build
+[Live Online Version](https://dist-5tlzwzxf1.now.sh/)
 ```
-
-### Run your tests
-```
-yarn run test
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## List
+[*] creates basic state for vue
+[*] Refactores to Vuex
+[*] sets getters, mutations and acions.
+[*] makes action asynchronous.

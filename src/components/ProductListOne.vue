@@ -2,7 +2,7 @@
     <div class="product-list-one">
         <h3>Product List One </h3>
         <ul>
-           <li v-for="product in saleProducts" :key="product.id">
+           <li v-for="product in salesProducts" :key="product.id">
                <span class="name">{{ product.name }}</span>
                <span class="price"> $ {{ product.price }}</span>
              </li> 
@@ -21,7 +21,7 @@ export default {
            return this.$store.state.products;
        },
        ...mapGetters([
-           'saleProducts'
+           'salesProducts'
        ])
    },
    methods:{
