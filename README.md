@@ -10,11 +10,11 @@ yarn install
 yarn run serve
 ```
 ## Live Version
-```
+
 [Live Online Version](https://dist-5tlzwzxf1.now.sh/)
-```
+
 ## List
-[*] creates basic state for vue
-[*] Refactores to Vuex
-[*] sets getters, mutations and acions.
-[*] makes action asynchronous.
+[x] creates basic state for vue
+[x] Refactores to Vuex
+[x] sets getters, mutations and acions.
+[x] makes action asynchronous.
